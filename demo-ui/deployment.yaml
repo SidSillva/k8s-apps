@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-name: demo-ui
+  name: demo-ui
 spec:
-replicas: 1
-revisionHistoryLimit: 3
-selector:
-matchLabels:
-app: demo-ui
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+    app: demo-ui
 template:
-metadata:
-labels:
-app: demo-ui
+  metadata:
+    labels:
+      app: demo-ui
 spec:
-containers:
-- image: sidsillva/demo-ui:1e7e49bbcd3a200d257595c75443211fb69a661a
-name: demo-ui
-ports:
-- containerPort: 80
+  containers:
+  - image: sidsillva/demo-ui:1e7e49bbcd3a200d257595c75443211fb69a661a
+    name: demo-ui
+    ports:
+    - containerPort: 80
