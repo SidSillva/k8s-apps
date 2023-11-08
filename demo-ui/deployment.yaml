@@ -14,7 +14,7 @@ labels:
 app: demo-ui
 spec:
 containers:
-- image: sidsillva/demo-ui:39c95281f44c30e40111732eb7c101b749e605da
+- image: sidsillva/demo-ui:1e7e49bbcd3a200d257595c75443211fb69a661a
 name: demo-ui
 ports:
 - containerPort: 80
